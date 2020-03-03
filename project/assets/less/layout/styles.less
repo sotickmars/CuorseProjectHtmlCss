@@ -297,7 +297,7 @@
 
 .inner-quote-img {
   width: 50%;
-  height: 500px;
+  height: 501px;
   img {
     object-fit: cover;
     width: 100%;
@@ -318,6 +318,7 @@
   display: flex;
   flex-wrap: wrap;
   height: 100%;
+  max-width: 500px;
 }
 
 .quote-title {
@@ -325,9 +326,8 @@
   font-style: italic;
   line-height: 1.166;
   color: #fff;
-  padding-bottom: 40px;
   width: 100%;
-  .font-main(@ff:@font-quote, @fs:36px);
+  .font-main(@ff: @font-quote, @fs:36px);
   .margin-top-bot();
 }
 
@@ -335,6 +335,7 @@
   color: #fff;
   line-height: 1.61;
   width: 100%;
+  text-transform: uppercase;
   .font-main(@fw:700, @fs:13px);
   .margin-top-bot();
 }
@@ -342,4 +343,29 @@
 .wrap-quorte-input {
   align-self: flex-end;
   width: 100%;
+}
+
+.wrap-quorte-input {
+  display: flex;
+  justify-content: center;
+  label {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  label:not(:last-child) {
+    margin-right: 8px;
+  }
+  input {
+    display: none;
+  }
+  input[id="input-one"]:checked ~ label[for="input-one"],
+  input[id="input-two"]:checked ~ label[for="input-two"],
+  input[id="input-three"]:checked ~ label[for="input-three"],
+  input[id="input-four"]:checked ~ label[for="input-four"],
+  input[id="input-five"]:checked ~ label[for="input-five"] {
+    background: #fff;
+  }
 }
