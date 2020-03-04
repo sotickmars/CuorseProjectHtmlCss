@@ -369,3 +369,104 @@
     background: #fff;
   }
 }
+
+/****************DOWNLOAD-START***********/
+
+.inner-download-start {
+  .margin-top-bot(@mt:100px, @mb:100px);
+}
+
+.title-download-start {
+  text-align: center;
+  .margin-top-bot();
+  .font-main(@fw:300, @fs:28px);
+}
+
+.content-download-start {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 38px;
+  .font-main(@fw:700, @fs:13px);
+}
+
+.download-start {
+  width: 280px;
+  text-transform: uppercase;
+  .font-main(@fw:600, @fs:13px);
+  &:hover {
+    border: 1px solid @company-color;
+    box-shadow: 5px 5px 10px 2px #6c7279;
+  }
+}
+
+/****************FOOTER********************/
+
+.wrap-activbox {
+  background: @color-footer-bg;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.inner-activbox {
+  display: flex;
+}
+
+.inner-footer-block {
+  width: 33.33%;
+}
+
+.title-footer {
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-footer-title;
+  .margin-top-bot();
+  .font-main(@fw:600);
+}
+
+.content-footer {
+  color: @color-footer-content;
+  text-align: center;
+  line-height: 1.6;
+  .font-main();
+}
+
+.inner-icons-footer {
+  .inner-icons {
+    justify-content: center;
+    padding-top: 14px;
+    .margin-top-bot();
+    .icon-command {
+      border: 2px solid #fff;
+      border-radius: 1px;
+      &:hover {
+        border: 2px solid @company-color;
+      }
+      &:not(:last-child) {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.wrap-copyright {
+  background: @color-footer-copy;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.copyright-content {
+  color: #808080;
+  text-align: center;
+  .font-main();
+  .margin-top-bot(@mb:5px);
+  span {
+    color: @company-color;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    .font-main(@fw:600);
+  }
+}
