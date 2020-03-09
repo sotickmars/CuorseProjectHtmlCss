@@ -26,11 +26,14 @@
   bottom: 0;
 }
 
+.burger-wrapper {
+  margin-left: auto;
+}
+
 .inner-nav {
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 40px;
   box-sizing: border-box;
+  .df-wrap();
   &::after {
     content: "";
     display: block;
@@ -38,6 +41,10 @@
     background: rgba(255, 255, 255, 0.15);
     .width-height(@h:2px);
   }
+}
+
+.toggle {
+  display: none;
 }
 
 .menu-header {
@@ -59,7 +66,7 @@
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75);
   text-transform: uppercase;
-  .transf-dur();
+  transition-duration: 0.4s;
   .font-main(@fw:700, @fs:13px);
   &:hover {
     color: @company-color;
@@ -92,8 +99,8 @@
 .content {
   font-family: @font-default;
   line-height: 1.5;
-  .font-main(@fs:22px);
   color: #fff;
+  .font-main(@fs:22px);
 }
 
 .content-header {
@@ -112,7 +119,7 @@
   background-color: @company-color;
   color: #fff;
   cursor: pointer;
-  .transf-dur();
+  transition-duration: 0.4s;
   .font-main(@fw:600);
   .content-center();
   &:hover {
@@ -127,10 +134,9 @@
 /******************SERVICES******/
 
 .inner-services {
-  display: flex;
-  flex-wrap: wrap;
   padding-top: 70px;
   padding-bottom: 120px;
+  .df-wrap();
 }
 
 .services-items {
@@ -166,8 +172,7 @@
 /***********IMG-CONTAINER******************/
 
 .wrapper-images {
-  display: flex;
-  flex-wrap: wrap;
+  .df-wrap();
 }
 
 .inner-images {
@@ -198,7 +203,7 @@
   cursor: pointer;
   color: #fff;
   text-align: center;
-  .transf-dur(@td:0.8s);
+  transition-duration: 0.8s;
   .title-img {
     text-transform: uppercase;
     .font-main(@fw:700);
@@ -236,8 +241,7 @@
   height: 270px;
   img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    .width-height();
   }
 }
 
@@ -266,7 +270,7 @@
   margin-right: 4px;
   border: 1px solid @color-icons;
   position: relative;
-  .transf-dur();
+  transition-duration: 0.4s;
   a {
     display: block;
     height: 100%;
@@ -285,7 +289,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: @color-icons;
-    .transf-dur();
+    transition-duration: 0.4s;
   }
 }
 
@@ -300,8 +304,8 @@
   height: 501px;
   img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    object-position: right;
+    .width-height();
   }
 }
 
@@ -315,10 +319,9 @@
 }
 
 .inner-quote-content {
-  display: flex;
-  flex-wrap: wrap;
   height: 100%;
   max-width: 500px;
+  .df-wrap();
 }
 
 .quote-title {

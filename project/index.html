@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
 	<title>Document</title>
 	<link
 		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Cardo:400,400i,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
@@ -18,15 +19,21 @@
 				<div class="logo-nav">
 					<img src="assets/images/activebox.png" alt="">
 				</div>
-				<nav class="menu-header">
-					<ul class="list-menu">
-						<li class="items-list"><a href="#">Features</a></li>
-						<li class="items-list"><a href="#">Works</a></li>
-						<li class="items-list"><a href="#">Our Team</a></li>
-						<li class="items-list"><a href="#">Testimonials</a></li>
-						<li class="items-list"><a href="#">Download</a></li>
-					</ul>
-				</nav>
+				<div class="burger-wrapper">
+					<input type="checkbox" id="menu-toggle" class="toggle">
+					<label class="menu-button" for="menu-toggle">
+						<span></span>
+					</label>
+					<nav class="menu-header">
+						<ul class="list-menu">
+							<li class="items-list"><a href="#">Features</a></li>
+							<li class="items-list"><a href="#">Works</a></li>
+							<li class="items-list"><a href="#">Our Team</a></li>
+							<li class="items-list"><a href="#">Testimonials</a></li>
+							<li class="items-list"><a href="#">Download</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 			<header class="inner-header">
 				<h1 class="title">
@@ -41,8 +48,8 @@
 			</header>
 		</div>
 	</section>
-	<section class="services">
-		<div class="inner-wrap inner-services">
+	<section class="services inner-wrap">
+		<div class="inner-services">
 			<div class="services-items">
 				<div class="items-icons">
 					<i class="fas fa-pencil-ruler"></i>
@@ -394,8 +401,6 @@
 			</button>
 		</div>
 	</section>
-
-
 	<footer class="wrap-footer">
 		<div class="wrap-activbox">
 			<div class="inner-wrap inner-activbox">
@@ -437,7 +442,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="wrap-copyright">
 			<div class="inner-wrap">
 				<p class="inner-copyright copyright-content">
