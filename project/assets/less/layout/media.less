@@ -186,3 +186,45 @@
     margin-left: 0;
   }
 }
+
+@media only screen and (max-width: 468px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+
+  .services-items {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .wrapper-images {
+    .inner-images {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2px;
+    }
+  }
+
+  .inner-command {
+    width: 100%;
+  }
+
+  .inner-quote-img {
+    display: none;
+  }
+
+  .inner-activbox {
+    display: block;
+  }
+
+  .inner-footer-block {
+    width: 100%;
+    +.inner-footer-block {
+      margin-top: 30px;
+    }
+  }
+}
